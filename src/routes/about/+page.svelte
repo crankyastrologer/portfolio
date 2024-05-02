@@ -1,0 +1,1 @@
+<div class="flex justify-center"><img src="src/static/OIP.jpeg" alt="my img"><p  class="text-xs dark:text-white">Flowbite</p></div>
