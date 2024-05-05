@@ -9,16 +9,17 @@ export const load = async () =>
 			headers: {}
 		}
     )
-    const response=  await hyghgraph.request(`query blog {
-        blog(where: {id: "cluio2nz307qt07poop0fpsxi"}) {
+    const response=  await hyghgraph.request(`query MyQuery {
+        projects {
           id
-          blog {
-            html
-          }
+          techused
+          title
+          description
         }
       }
+      
       `)
-      const data = response.blog.blog.html
+      const data = response
       
       return {data};
 }

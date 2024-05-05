@@ -1,9 +1,10 @@
 <script>
   import "../app.css";
   import { page } from '$app/stores';
-  import {P,Hr, Navbar,Img, NavBrand, NavLi, NavUl, NavHamburger ,Avatar} from 'flowbite-svelte';
+  import {P,Hr, Navbar,Img, NavBrand,GradientButton ,Button, NavLi, NavUl, NavHamburger ,Avatar} from 'flowbite-svelte';
   import { DarkMode } from 'flowbite-svelte';
   import{Github,Linkedin,Gmail} from 'svelte-simples';
+  import {Motion} from 'svelte-motion'
   import Footer from "$lib/footer.svelte";
   import Clock from '$lib/clock.svelte';
   import Time from "svelte-time";
@@ -34,8 +35,11 @@
     <NavLi href="/docs/components/avatar">Avatar</NavLi>
   </NavUl>
   <div class='flex'>
-  <Gmail class='mx-3'/>
-  <Linkedin class='mx-3'/>
+    <Button  shadow  size='xs' color="bg-gray-950" class='text-white hover:bg-gradient-to-r from-purple-500 to-pink-500'><Gmail size='16'/></Button>
+    <Button   size='xs' color="bg-gray-950" class='text-white hover:bg-gradient-to-br from-purple-600 to-blue-500 '><Linkedin size='16'/></Button>
+    <Button   size='xs' color="bg-gray-950" class='text-white hover:bg-gradient-to-br from-green-400 to-blue-600 '><Github size='16'/></Button>
+
+  <DarkMode class='my-auto'/>
 </div>
 
 </NavContainer>

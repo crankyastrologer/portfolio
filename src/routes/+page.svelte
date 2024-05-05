@@ -6,7 +6,7 @@
 	let blogData: any;
 	data = data;
 
-	console.log(data);
+	
 </script>
 
 <div class="flex justify-center max-w-3xl mx-auto">
