@@ -1,38 +1,34 @@
-# create-svelte
+<img alt="Static Badge" src="https://img.shields.io/badge/My%20WEBSITE-f53b00?style=for-the-badge">
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Tech Stack
 
-## Creating a project
+- [Svelte](https://svelte.dev/) + Typecscript - **Framework**
+- [hygraph](https://hygraph.com/) + [GraphQL](https://graphql.org/) - **Content Management System (CMS)**
+- [Tailwind CSS](https://tailwindcss.com/) +[Flowbit-Svelte](flowbite-svelte.com) - **Styling**
+- [UploadThing](uploadthing.com) - **CDN**
+- [VERCEL](https://vercel.com/) - **Deployment**
 
-If you're seeing this, you've probably already done this step. Congrats!
+<hr/>
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 🔬 Local Setup
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+$ git clone https://github.com/crankyastrologer/portfolio
+$ cd portfolio
+$ npm install
+$ npm run dev
 ```
 
-## Building
-
-To create a production version of your app:
+Create a `.env.local` file & add the required `env` in it.
 
 ```bash
-npm run build
+VITE_GRAPHQL_URL=...
 ```
 
-You can preview the production build with `npm run preview`.
+## 📃 Usage
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Remove all of my personal information/content before using it as a template. Feel free to explore and contribute to the project. I'm open to all the PRs.
+
+## 🙋‍♂️About
+
+This is a simple portfolio websit I created to better present my work. Frontend is not my strongest suit so it might look simple but gets the job done.
