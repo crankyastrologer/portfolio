@@ -8,16 +8,17 @@ export const load = async () => {
 			headers: {}
 		}
 	);
-	const response: any = await hyghgraph.request(`query blog {
-        blog(where: {id: "cluio2nz307qt07poop0fpsxi"}) {
-          id
-          blog {
-            html
-          }
-        }
-      }
+	const response: any = await hyghgraph.request(`query MyQuery {
+		blogs {
+		  id
+		  blog {
+			markdown
+		  }
+		}
+	  }
+	  
       `);
-	const data: any = response.blog.blog.html;
+	const data: any = response.blogs;
 
 	return { data };
 };
