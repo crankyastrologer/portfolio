@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { Img } from 'flowbite-svelte';
 	import { P } from 'flowbite-svelte';
-import type { main } from "$lib/interface.js"
-	import llm from "$lib/llm.png"
+import type { main } from "$lib/interface/interface.js"
+	import llm from "$lib/static/llm.png"
 	export let data:main;
 	const first = data.data[0];
 	const second = data.data[1];

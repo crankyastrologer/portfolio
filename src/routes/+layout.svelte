@@ -1,13 +1,12 @@
 <script lang="ts">
 	import '../app.css';
 	import { page } from '$app/stores';
-	import avatar from '$lib/avatar.webp';
+	import avatar from '$lib/static/avatar.webp';
 	import { P, Hr, Navbar, Button, NavLi, NavUl, NavHamburger, Avatar } from 'flowbite-svelte';
 	import { DarkMode } from 'flowbite-svelte';
 	import { Github, Linkedin, Gmail, Files } from 'svelte-simples';
-	import { Motion } from 'svelte-motion';
-	import Footer from '$lib/footer.svelte';
-	import Clock from '$lib/clock.svelte';
+	import Footer from '$lib/components/footer.svelte';
+	import Clock from '$lib/components/clock.svelte';
 
 	$: activeUrl = $page.url.pathname;
 	function openLinkInNewTab(no: number) {

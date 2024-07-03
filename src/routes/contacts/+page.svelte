@@ -1,4 +1,4 @@
 <script>
-    import Form from "$lib/form.svelte"
+    import Form from "$lib/components/form.svelte"
 </script>
 <Form/>

@@ -1,8 +1,8 @@
 <script lang = ts>
 	import { Card, Button, Toggle } from 'flowbite-svelte';
 	import { Github } from 'svelte-simples';
-	import Badge from '$lib/badge.svelte';
-	import img from '$lib/OIP.jpeg';
+	import Badge from '$lib/components/badge.svelte';
+	import img from '$lib/static/OIP.jpeg';
 	let hCard = false;
 	export let data;
 	const tech = data.techused.data.used;

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
-	import { getDateTime } from '$lib/get-date-time';
+	import { getDateTime } from '$lib/utils/get-date-time';
 
 	let time = getDateTime();
 	let intervalId: number;

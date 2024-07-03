@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Tabs, TabItem } from 'flowbite-svelte';
-	import type {Project} from '$lib/interface'
+	import type {Project} from '$lib/interface/interface'
 	import Ccards from './card.svelte';
 	import Ecards from './expCard.svelte';
 	export let data:Project[];

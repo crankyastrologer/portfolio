@@ -1,6 +1,6 @@
 
-import {hyghgraph} from '../../lib/hygraph';
-import type {Projects} from '../../lib/interface';
+import {hyghgraph} from '../../lib/utils/hygraph';
+import type {Projects} from '../../lib/interface/interface';
 /** @type {import('./$types').PageLoad} */
 export const load = async () =>
 {
