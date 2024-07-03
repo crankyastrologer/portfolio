@@ -1,9 +1,9 @@
 import {hyghgraph} from '../lib/hygraph';
-
+import type {respBlog} from '../lib/interface';
 /** @type {import('./$types').PageLoad} */
 export const load = async () => {
 
-	const response: any = await hyghgraph.request(`query MyQuery {
+	const response: respBlog = await hyghgraph.request(`query MyQuery {
 		blogs {
 		  id
 		  blog {

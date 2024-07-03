@@ -20,5 +20,8 @@ export interface Project{
 	};
 }
 export interface Projects {
-	data: {projects:Project[];} 
+	data: {projects:Project[];}
+}
+export interface respBlog{
+	blogs:main
 }
