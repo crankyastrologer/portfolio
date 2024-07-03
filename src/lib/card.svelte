@@ -1,9 +1,10 @@
-<script>
-	import { Card, Button, Toggle } from 'flowbite-svelte';
-	import { Gmail, Github } from 'svelte-simples';
+<script lang="ts">
+	import { Card, Button } from 'flowbite-svelte';
+	import { Gmail } from 'svelte-simples';
+	import type {Project} from '$lib/interface'
 	import Badge from '$lib/badge.svelte';
 	let hCard = false;
-	export let data;
+	export let data:Project;
 	const tech = data.techused.used;
 </script>
 

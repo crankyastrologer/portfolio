@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
     import Ctab from "$lib/project_tabs.svelte"
-    export let data;
-    console.log("hello world!")
-    
-    let hCard = false;
+		import type {Projects} from "$lib/interface.ts"
+    export let data:Projects;
+
+
+
   
 </script>
 

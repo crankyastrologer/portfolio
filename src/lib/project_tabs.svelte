@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 	import { Tabs, TabItem } from 'flowbite-svelte';
+	import type {Project} from '$lib/interface'
 	import Ccards from './card.svelte';
 	import Ecards from './expCard.svelte';
-	export let data;
-	console.log(data);
+	export let data:Project[];
+
 </script>
 
 <Tabs contentClass="p-4 bg-gray-50 rounded-lg dark:bg-gray-950 mt-4" tabstyle="underline">

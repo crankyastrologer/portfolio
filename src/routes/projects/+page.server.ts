@@ -1,14 +1,10 @@
-import {GraphQLClient} from 'graphql-request'
+
+import {hyghgraph} from '../../lib/hygraph';
+
 /** @type {import('./$types').PageLoad} */
 export const load = async () =>
 {
-    const hyghgraph = new GraphQLClient(
-        import.meta.env.VITE_GRAPHQL_URL,
 
-        {
-			headers: {}
-		}
-    )
     const response=  await hyghgraph.request(`query MyQuery {
         projects {
           id
@@ -19,7 +15,7 @@ export const load = async () =>
       }
       
       `)
-      const data = response
+      const data = await response
       
       return {data};
 }

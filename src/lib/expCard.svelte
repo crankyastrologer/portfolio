@@ -1,4 +1,4 @@
-<script>
+<script lang = ts>
 	import { Card, Button, Toggle } from 'flowbite-svelte';
 	import { Github } from 'svelte-simples';
 	import Badge from '$lib/badge.svelte';

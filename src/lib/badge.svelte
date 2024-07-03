@@ -1,6 +1,6 @@
 <script lang='ts'>
     import {Badge } from 'flowbite-svelte'
-    export let data;
+    export let data: str;
 
 </script>
 

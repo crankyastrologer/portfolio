@@ -1,7 +1,7 @@
 
 <script>
     import { Img } from 'flowbite-svelte';
-    import { GradientButton,Heading,P,Span,Label, Input } from 'flowbite-svelte';
+    import { GradientButton,Heading,Span, Input } from 'flowbite-svelte';
     import { Textarea } from 'flowbite-svelte';
     
   let textareaprops = {

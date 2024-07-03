@@ -79,4 +79,5 @@
 <Hr classHr="w-64 h-1 mx-auto my-4 rounded md:my-10" />
 
 <slot />
-<Footer />
+<Hr classHr="w-64 h-1 mx-auto my-4 rounded md:my-10" />
+<Footer  />
