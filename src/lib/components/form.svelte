@@ -3,6 +3,7 @@
     import { Img } from 'flowbite-svelte';
     import { GradientButton,Heading,Span, Input } from 'flowbite-svelte';
     import { Textarea } from 'flowbite-svelte';
+    import {fade} from 'svelte/transition'
     let message : string;
     let email : string;
     let success:string = '';
@@ -42,7 +43,7 @@
 
     }
 </script>
-<div class="mx-auto max-w-3xl">
+<div transition:fade class="mx-auto max-w-3xl">
     <Heading tag="h2" class="text-center mb-4 ">
       <Span gradient>CONTACT</Span>
     </Heading>

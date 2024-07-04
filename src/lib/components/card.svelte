@@ -4,18 +4,18 @@
 	import { Gmail,Github } from 'svelte-simples';
 	import type {Project} from '$lib/interface/interface'
 	import Badge from '$lib/components/badge.svelte';
-	import openLinkInNewTab from '$lib/utils/openLink';
+
 	let hCard = false;
 	export let data:Project;
 	const tech = data.techused.used;
-	console.log(data.imgLink)
+
 	  import { onMount } from 'svelte';
 
   let ready = false;
   onMount(() => ready = true);
 </script>
 {#if ready}
-<div  in:slide={{duration:500}} out:fade class="flex justify-center card-container">
+<div  in:slide={{duration:1000}} out:fade class="flex justify-center card-container">
 	<div class="space-y-4">
 		<Card  img={data.imgLink} horizontal size="xl" reverse={hCard} class="dark:bg-gray-950">
 			<div class="justify-end flex-row">
