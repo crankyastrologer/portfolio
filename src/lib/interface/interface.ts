@@ -13,6 +13,8 @@ export interface Project{
 	id: string,
 	title: string,
 	description: string,
+	link:string,
+	imgLink:string,
 	techused: {
 
 			used: Array<string>;

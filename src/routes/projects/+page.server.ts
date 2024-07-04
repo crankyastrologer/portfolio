@@ -5,14 +5,17 @@ import type {Projects} from '../../lib/interface/interface';
 export const load = async () =>
 {
 
-    const response: Projects=  await hyghgraph.request(`query MyQuery {
-        projects {
-          id
-          techused
-          title
-          description
-        }
-      }
+    const response: Projects=  await hyghgraph.request(`
+      query MyQuery {
+  projects {
+    id
+    imgLink
+    link
+    techused
+    title
+    description
+  }
+}
       
       `)
       const data = await response
