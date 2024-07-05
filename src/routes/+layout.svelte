@@ -73,3 +73,11 @@
 <slot />
 <Hr classHr="w-64 h-1 mx-auto my-4 rounded md:my-10" />
 <Footer  />
+<svelte:head>
+	<title>Ansh's Portfolio</title>
+	<meta name="description" content="Hello this is my portfolio website made with the help of sveltekit,
+hygraph, tailwind, and flowbite-svelte"/>
+	<meta property="og:title" content="Ansh's Portfolio" />
+<meta property="og:description" content="Hello checkout my portfolio website made in sveltekit with help of tailwind and hygraph" />
+<meta property="og:image" content="https://utfs.io/f/8a69b87b-c6da-4ef2-8917-942d26fb46e9-747opx.jpeg" />
+</svelte:head>
