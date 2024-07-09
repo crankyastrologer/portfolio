@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { page } from '$app/stores';
+	import icon from "$lib/static/icons8-a-96.png"
 	import avatar from '$lib/static/avatar.webp';
 	import { P, Hr, Navbar, Button, NavLi, NavUl, NavHamburger, Avatar } from 'flowbite-svelte';
 	import { DarkMode } from 'flowbite-svelte';
@@ -34,6 +35,7 @@
 		<NavUl {activeUrl}>
 			<NavLi activeClass="underline" href="/">Home</NavLi>
 			<NavLi href="/projects">Work</NavLi>
+			<NavLi href="https://chat.ansh.site" target="_blank">Chat</NavLi>
 			<NavLi href="/contacts">Contact</NavLi>
 
 		</NavUl>
@@ -77,6 +79,7 @@
 	<title>Ansh's Portfolio</title>
 	<meta name="description" content="Hello this is my portfolio website made with the help of sveltekit,
 hygraph, tailwind, and flowbite-svelte"/>
+	<link rel="icon" href={icon} />
 	<meta property="og:title" content="Ansh's Portfolio" />
 <meta property="og:description" content="Hello checkout my portfolio website made in sveltekit with help of tailwind and hygraph" />
 <meta property="og:image" content="https://utfs.io/f/8a69b87b-c6da-4ef2-8917-942d26fb46e9-747opx.jpeg" />
